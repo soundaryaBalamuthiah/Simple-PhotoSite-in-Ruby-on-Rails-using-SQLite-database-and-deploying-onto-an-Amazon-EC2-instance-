@@ -1,0 +1,22 @@
+<style>
+  hr {
+    display: block;
+    margin-top: 1.0em;
+    margin-bottom:1.0em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 5px;
+  }
+</style>
+<body><p><strong> <%= @comments.count %> Comments </strong></p>
+<% @comments.each do |comment| %>
+    <p>
+    <%= image_tag(comment.photo.file_name) %> <br>
+    <p><strong>Commented by : </strong> <%= link_to comment.user.first_name , controller: "photo" , action: "index" , id:comment.user.id %><%= link_to comment.user.last_name , controller: "photo" , action: "index" ,id:comment.user.id %></p>
+      <p><strong>Comments :</strong><%= comment.comment_text %></p>
+    <p><strong>Commented at: </strong><%= comment.created_at %></p>
+    <hr>
+       </p>
+<% end %>
+</body>

@@ -1,0 +1,22 @@
+<style>
+  hr {
+    display: block;
+    margin-top: 1.0em;
+    margin-bottom:1.0em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 5px;
+  }
+</style>
+<% @user.each do |user| %>
+<h1> Photos of <%=user.first_name%> <%=user.last_name%></h1>
+<% end%>
+<% @photo.each do|photo| %>
+  <div style="color:#0000FF">
+    <%=image_tag(photo.file_name, alt: 'no file') %>
+  <p>Photo Created at :<%=photo.created_at%></p>
+  <%=link_to 'Get photo comments', controller: "comment", action:"index", id: photo.id%>
+    <hr>
+  </div>
+<%end%>

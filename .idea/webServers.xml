@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5c293200-e5b6-444d-8bfb-9839f36e38d0" name="PhotositeEC2Demo" url="http://54.245.171.211">
+        <fileTransfer host="54.245.171.211" port="22" privateKey="E:\CSUEB\Courses\FALL 17\CS-SW AND WEB  BASED\Project R2\Photosite_key.pem" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="7ef604e5-6b3d-4f87-8d1f-3a8a0620a58b" name="PhotositeEC2Demo1" url="http://54.213.64.125">
+        <fileTransfer host="54.213.64.125" port="22" privateKey="E:\CSUEB\Courses\FALL 17\CS-SW AND WEB  BASED\Project R2\Photosite_key1.pem" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="05a093d8-c4a8-4bc8-afaf-98a3931e43fa" name="PhotositeEC2Demo3" url="http://54.244.80.222">
+        <fileTransfer host="54.244.80.222" port="22" privateKey="C:\Users\Soundarya BM\Downloads\Photosite_key2.pem" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="3035b8f2-2d16-40e0-b2d3-853379f12378" name="Photosite_demoSS" url="http://54.218.192.21">
+        <fileTransfer host="54.218.192.21" port="22" privateKey="C:\Users\Soundarya BM\Downloads\Photosite_keypair.pem" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
